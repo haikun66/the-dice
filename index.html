@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>The Dice</title>
 </head>
-<body>
+<body onload="gamestart()">
     <header class="d-flex justify-content-center align-items-center">
 
         <button type="button" class="h-25 btn btn-white">
@@ -23,7 +23,7 @@
 
         <div class="">
             <h2 class="title Player1">Player 1</h2>
-            <p class="resulta text-success text-center">10</p>
+            <p class="resulta1 text-success text-center"></p>
         </div>
 
         <div class="">
@@ -32,7 +32,7 @@
 
         <div class="">
             <h2 class="title Player2">Player 2</h2>
-            <p class="resulta text-success text-center"></p>
+            <p class="resulta2 text-success text-center"></p>
         </div>
 
     </main>
@@ -41,7 +41,8 @@
     <footer class="d-flex justify-content-around align-items-center">
 
         <div class="box-left bg-danger d-flex justify-content-center">
-            <h4 class="text-center text-dark">Current:</h4>
+            <h4 class="text-center text-dark ">Current:</h4>
+            <p class="d-flex justify-content-center align-items-center global1"></p>
         </div>
 
         <div class="d-flex justify-content-center flex-column">
@@ -50,7 +51,7 @@
                 Roll Dice
             </button>
 
-            <button type="button" class="btn ">
+            <button type="button" class="btn " onclick="hold()">
                 <img class="icon" src="image/téléchargement.png" alt="png"> 
                 Hold
             </button>
@@ -58,6 +59,7 @@
 
         <div class="box-right bg-danger">
             <h4 class="text-center text-dark">Current:</h4>
+            <p class="d-flex justify-content-center align-items-center global2"></p>
         </div>
 
     </footer>
