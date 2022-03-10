@@ -45,3 +45,15 @@ h4{
     height: 100px;
     width: 150px;
 }
+#point1{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: none;
+}
+#point2{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: none;
+}
