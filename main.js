@@ -52,10 +52,12 @@ function rolldice() {
             if(playeractuel === player1){
                 score1 = Number(score1) + Number(Dice); //score1 prend la valeur de dice.
                 document.querySelector(".resulta1").innerHTML = Number(score1); //score1 et afficher dans l'html
+                document.getElementById('point1').style.display="block";
             }
                 else{
                     score2 = Number(score2) + Number(Dice);
                     document.querySelector(".resulta2").innerHTML = Number(score2);
+                    document.getElementById('point2').style.display="block";
                 }
         }
             else if(Dice === 1) {
@@ -110,7 +112,7 @@ endgame.addEventListener('click', function(){
         document.getElementById('holld').disabled = true;
     }
     else{
-        if(playeractuel===1){
+        if(playeractuel===player1){
             playeractuel = player2;
         }
         else{
