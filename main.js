@@ -106,7 +106,7 @@ function hold() {
 }
 
 endgame.addEventListener('click', function(){
-    if(global1 >= 200 || global2 >= 200){
+    if(global1 >= 100 || global2 >= 100){
         alert("Winner " + playeractuel)
         document.getElementById('rolll').disabled = true;
         document.getElementById('holld').disabled = true;
