@@ -28,7 +28,8 @@ footer{
     font-weight: 400;
 }
 
-.resulta{
+.resulta1,
+.resulta2{
     font-size: 40px;
 }
 
@@ -56,4 +57,46 @@ h4{
     height: 20px;
     border-radius: 10px;
     display: none;
+}
+@media screen and (max-width:680px){
+    .resulta1,
+    .resulta2{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    #dee{
+        width: 50px;
+        height: 50px;
+    }
+    .box-left{
+        height: 50px;
+        width: 75px;
+    }
+    .box-right{
+        height: 50px;
+        width: 75px;
+    }
+    h4{
+        font-size: small;
+    }
+    .icon{
+        width: 15px;
+        height: 15px;  
+    }
+    #point1{
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        display: none;
+    }
+    #point2{
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        display: none;
+    }
+
 }
